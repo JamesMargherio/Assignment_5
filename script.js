@@ -64,6 +64,11 @@ window.addEventListener("load", function() {
       } else {
          launchStatusUpdate.style.color = "green";
          launchStatusUpdate.innerHTML = "Shuttle is ready for launch";
+         faults.style.visibility = 'visible'; 
+         pilotStatusUpdate.innerHTML = `Pilot ${pilotNameInput.value} is ready for launch`;
+         copilotStatusUpdate.innerHTML = `Co-pilot ${copilotNameInput.value} is ready for launch`;
+         fuelStatusUpdate.innerHTML = "Fuel level is high enough for launch";
+         cargoStatusUpdate.innerHTML = "Cargo mass low enough for launch";
       }
    });
 });
